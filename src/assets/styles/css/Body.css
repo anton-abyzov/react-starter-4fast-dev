@@ -1,0 +1,356 @@
+.clickable {
+  cursor: pointer;
+}
+
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+  min-height: 600px;
+}
+
+.HolyGrail-content {
+  flex: 1;
+  width: 100%;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+.staticLogo {
+  position: relative;
+  margin-left: 40px;
+  z-index: 100;
+  display: block;
+}
+
+body {
+  margin: 0px;
+  color: #575d6d;
+  font-family: "dinlight";
+}
+
+.contentTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  text-align: center;
+  width: 50%;
+}
+
+.content {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.card-column {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.panel-element {
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  margin: 15px 50px 50px 10px;
+  padding: 5px;
+}
+
+.imageCard {
+  max-width: 450px;
+  margin: auto;
+}
+
+.footerContainer {
+  padding: 10px 5px 5px 5px;
+}
+
+.footer {
+  background-color: #c1c5cc;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px 5px 5px;
+}
+
+.contactBar {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: #575d6d;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  padding: 10px 5px 5px 5px;
+  line-height: 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.lang {
+  margin: 10px;
+}
+
+.popup {
+  display: none;
+}
+
+.item {
+  background: #c1c5cc;
+}
+
+.item:hover ~ .popup {
+  display: block;
+}
+
+.productItem {
+  border: 1px solid #4f5973;
+  width: 273px;
+  height: 200px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+.productItem .image {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.plus-minus-toggle {
+  margin-top: 7px;
+  cursor: pointer;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+.plus-minus-toggle:before, .plus-minus-toggle:after {
+  background: #000;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  transition: transform 500ms ease;
+}
+.plus-minus-toggle:after {
+  transform-origin: center;
+}
+.plus-minus-toggle.collapsed:after {
+  transform: rotate(90deg);
+}
+.plus-minus-toggle.collapsed:before {
+  transform: rotate(180deg);
+}
+
+.toggle-border {
+  margin-right: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  display: block;
+  height: 25px;
+  margin-right: 3px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+.row {
+  display: flex;
+}
+
+.lang-select {
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "dinmedium";
+  background-color: #3b3b3b !important;
+}
+
+.lang-select .flag-options {
+  color: black !important;
+}
+
+.lang-select .country-flag .country-label {
+  font-size: 0.8125em !important;
+}
+
+.lang-select .arrow-down {
+  color: white !important;
+}
+
+.shippingCard {
+  height: 220px;
+  width: 220px;
+  border: 1px solid #d8d5d5;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.shippingCard:hover {
+  background-color: #ececec;
+}
+
+/* styles for '...' */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.block-with-text:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transition: opacity 1s, background-color 1s;
+  opacity: 0.3;
+}
+
+.overlay:hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #c03c12;
+  transition: opacity 0.7s, background-color 0.7s;
+  opacity: 0.9;
+}
+
+.disable-arrows input[type=number]::-webkit-inner-spin-button,
+.disable-arrows input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.disable-arrows input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-items :not(:last-child) {
+  margin-left: 10px;
+}
+
+.header-items * {
+  cursor: pointer;
+}
+
+.header-items a {
+  text-decoration: none;
+}
+
+.multi-field-row {
+  display: flex;
+}
+
+.multi-field-row :not(:last-child) {
+  margin-right: 15px;
+}
+
+.snackbarList div {
+  margin-top: 20px;
+}
+
+.title-expansion-panel {
+  font-family: "dinmedium";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 50px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=Body.css.map */

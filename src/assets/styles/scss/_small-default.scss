@@ -1,0 +1,142 @@
+.staticLogo {
+    display: none;
+  }
+  
+  .HolyGrail {
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    color: white;
+    background-color: #3b3b3b;
+  }
+  
+  
+  
+  .layout-section {
+    color: $white;
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-position: center top;
+  }
+  
+  .login-section {
+    height: 690px;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      //url("Backgrounds/<yourbg>.jpg") no-repeat;
+    //background-size: 100% auto;
+  }
+  
+  .account-section {
+    background-position-y: 65%;
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      //url("Backgrounds/<yourbg>.jpg") no-repeat;
+    //background-size: 100% auto;
+  }
+  
+  .home-section {
+    background-position-y: 85%;
+    height: 130px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      //url("Backgrounds/<yourbg>.jpg") no-repeat;
+    // background-size: 100% auto;
+  }
+  
+  .reset-section {
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      //url("Backgrounds/<yourbg>.jpg") no-repeat;
+  }
+  
+  .md-collapse {
+    display: none !important;
+  }
+  .menu-collapse {
+    display: initial !important;
+  }
+  
+  .top-menu-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .shipping-form {
+    width: 43%;
+  }
+  
+  .shipping-cards {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-bar {
+    width: 550px !important;
+  }
+  
+  .menu-item-row {
+    display: flex;
+    align-items: center !important;
+  }
+  
+  @media screen and (max-width: 570px) {
+    .shipping-form {
+      width: 100%;
+    }
+  
+    .search-bar {
+      width: 320px !important;
+    }
+  
+    .shipping-cards {
+      width: 100%;
+    }
+  
+    .bottomContent {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .contentTitle {
+      width: 100%;
+    }
+    .footer-list-item {
+      width: 100%;
+      margin: 5px 0;
+      text-align: center;
+    }
+    .footer-list {
+      justify-content: center;
+    }
+    .footer-image-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .footer-image-row > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0; 
+      width: 100%;
+    }
+    .copyright {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

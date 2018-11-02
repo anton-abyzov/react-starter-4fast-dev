@@ -1,0 +1,30 @@
+{
+    "en": {
+        "common": {
+            "Go": "Go",
+            "Home": "Home",
+            "Save": "Save",
+            "Settings": "Settings",
+            "Submit": "Submit",
+            "User": "User",
+            "Username": "Username",
+            "Apply": "Apply"
+        },
+        "account": {
+            "Delete": "Delete",
+            "Forgot password": "Forgot password",
+            "Login": "Login",
+            "Logout": "Logout",
+            "Password": "Password",
+            "Password doesn't match": "Password doesn't match",
+            "Password Restore": "Password Restore",
+            "Register": "Register",
+            "Sign Up": "Sign Up",
+            "staySigned": "Stay signed in",
+            "ForgotPassword": "Forgot Password",
+            "newPassword": "New Password",
+            "repeatPassword": "Repeat Password",
+            "passwordReset": "Password Reset"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "de": {
+        "common": {
+            "Go": "Go",
+            "Home": "Zuhause",
+            "Save": "Save",
+            "Settings": "Settings",
+            "Submit": "Submit",
+            "User": "User",
+            "Username": "Benutzername"
+        },
+        "account": {
+            "Delete": "Delete",
+            "Forgot password": "Forgot password",
+            "Login": "Anmeldung",
+            "Logout": "Logout",
+            "Password": "Password",
+            "Password doesn't match": "Password doesn't match",
+            "Password Restore": "Password Restore",
+            "Register": "Register",
+            "Sign Up": "Sign Up",
+            "staySigned": "Stay signed in",
+            "ForgotPassword": "Forgot password"
+        }
+    }
+}

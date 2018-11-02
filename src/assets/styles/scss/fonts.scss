@@ -1,0 +1,105 @@
+@import "variables";
+
+@font-face {
+  font-family: 'dinbold';
+  src: url('../../fonts/din-font/dinbold-webfont.woff2') format('woff2'),
+       url('../../fonts/din-font/dinbold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dinlight';
+  src: url('../../fonts/din-font/dinlight-webfont.woff2') format('woff2'),
+       url('../../fonts/din-font/dinlight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'dinmedium';
+  src: url('../../fonts/din-font/dinmedium-webfont.woff2') format('woff2'),
+       url('../../fonts/din-font/dinmedium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dinregular';
+  src: url('../../fonts/din-font/dinregular-webfont.woff2') format('woff2'),
+       url('../../fonts/din-font/dinregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.blue-header {
+  font-family: "dinmedium";
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.card-header {
+  font-family: "dinbold";
+  font-size: 1.25em;
+}
+
+.input-header {
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.75em;
+  font-family: "dinmedium";
+  span {
+    color: $red
+  }
+}
+
+.checkbox {
+  position: relative;
+}
+
+.label {
+  font-size: 0.75em;
+  align-items: flex-end;
+}
+
+.big-header {
+  // color: black;
+  font-size: 1.75em;
+  font-family: "dinmedium";
+  letter-spacing: 0.001em;
+  text-transform: uppercase;
+}
+
+.menu-label {
+  text-transform: uppercase;
+  color: $white;
+  font-size: 0.8125em;
+  font-family: "dinmedium";
+}
+
+.small-header {
+  text-transform: uppercase;
+  color: $dark;
+  // color: black;
+  font-size: 0.8125em;
+  font-family: "dinmedium";
+}
+
+.title-header {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-family: "dinmedium";
+}
+
+.under-header {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-family: "dinlight";
+}
+
+
+.success {
+  color: $green;
+}

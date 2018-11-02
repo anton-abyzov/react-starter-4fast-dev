@@ -1,0 +1,84 @@
+@media screen and (min-width: 570px) {
+    body {
+      margin: 0;
+    }
+  
+    .topCard {
+      justify-content: center;
+      background-color: #f2f2f2 !important;
+      min-width: 200px;
+      max-width: 450px;
+      width: 450px;
+      margin: auto;
+    }
+  
+    .HolyGrail-body {
+      flex-direction: row;
+      flex: 1;
+    }
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+    .imageCard {
+      max-width: 450px;
+      margin: auto;
+    }
+    .footer-list-item {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    .footer-list {
+      justify-content: flex-start !important;
+    }
+    .footer-image-row {
+      justify-content: space-between;
+      width: 100%;
+    }
+    .footer-image-row > div {
+      width: auto;
+    }
+    .copyright {
+      text-align: left;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .main-title-header {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 750px) {
+    .main-title-header {
+      text-align: left;
+      width: 253px;
+    }
+  
+    .bottomContent {
+      height: 100%;
+      margin-left: 220px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .header {
+      justify-content: space-between;
+    }
+  
+    .staticLogo {
+      display: block;
+    }
+    .md-collapse {
+      display: flex !important;
+    }
+    .menu-collapse {
+      display: none !important;
+    }
+  }
+  

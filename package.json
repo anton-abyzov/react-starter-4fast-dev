@@ -1,0 +1,44 @@
+{
+  "name": "mbps-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "i18next": "^12.0.0",
+    "i18next-browser-languagedetector": "^2.2.3",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-i18next": "^8.1.2",
+    "react-redux": "^5.1.0",
+    "react-redux-toastr": "^7.4.0",
+    "react-router-dom": "^4.3.1",
+    "react-router-hash-link": "^1.2.0",
+    "react-scripts": "2.0.5"
+  },
+  "scripts": {
+    "start": "npm run sass | react-scripts start",
+    "start:staging": "cross-env REACT_APP_ENV=staging | react-scripts start", "//": "not working, is there a way to make it work with react-scripts?",
+    "build": "npm run sass:build | react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sass": "sass --watch src/assets/styles/scss:src/assets/styles/css",
+    "sass:build": "sass --update src/assets/styles/scss:src/assets/styles/css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "redux-devtools-extension": "^2.13.5",
+    "redux-saga": "^0.16.2",
+    "sass": "^1.14.3"
+  }
+}

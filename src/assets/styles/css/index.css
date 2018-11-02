@@ -1,0 +1,752 @@
+.clickable {
+  cursor: pointer;
+}
+
+.HolyGrail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+  min-height: 600px;
+}
+
+.HolyGrail-content {
+  flex: 1;
+  width: 100%;
+}
+
+.HolyGrail-nav,
+.HolyGrail-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+}
+
+.HolyGrail-nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.HolyGrail,
+.HolyGrail-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-nav {
+  order: -1;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 1;
+}
+
+.staticLogo {
+  position: relative;
+  margin-left: 40px;
+  z-index: 100;
+  display: block;
+}
+
+body {
+  margin: 0px;
+  color: #575d6d;
+  font-family: "dinlight";
+}
+
+.contentTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+  text-align: center;
+  width: 50%;
+}
+
+.content {
+  color: black;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.card-column {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.panel-element {
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  margin: 15px 50px 50px 10px;
+  padding: 5px;
+}
+
+.imageCard {
+  max-width: 450px;
+  margin: auto;
+}
+
+.footerContainer {
+  padding: 10px 5px 5px 5px;
+}
+
+.footer {
+  background-color: #c1c5cc;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px 5px 5px;
+}
+
+.contactBar {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: #575d6d;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1px;
+  padding: 10px 5px 5px 5px;
+  line-height: 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.lang {
+  margin: 10px;
+}
+
+.popup {
+  display: none;
+}
+
+.item {
+  background: #c1c5cc;
+}
+
+.item:hover ~ .popup {
+  display: block;
+}
+
+.productItem {
+  border: 1px solid #4f5973;
+  width: 273px;
+  height: 200px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+.productItem .image {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.plus-minus-toggle {
+  margin-top: 7px;
+  cursor: pointer;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+.plus-minus-toggle:before, .plus-minus-toggle:after {
+  background: #000;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  transition: transform 500ms ease;
+}
+.plus-minus-toggle:after {
+  transform-origin: center;
+}
+.plus-minus-toggle.collapsed:after {
+  transform: rotate(90deg);
+}
+.plus-minus-toggle.collapsed:before {
+  transform: rotate(180deg);
+}
+
+.toggle-border {
+  margin-right: 5px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.menu-icon {
+  display: block;
+  height: 25px;
+  margin-right: 3px;
+  width: auto;
+  margin-bottom: -5px;
+}
+
+.row {
+  display: flex;
+}
+
+.lang-select {
+  color: white !important;
+  text-transform: uppercase;
+  font-family: "dinmedium";
+  background-color: #3b3b3b !important;
+}
+
+.lang-select .flag-options {
+  color: black !important;
+}
+
+.lang-select .country-flag .country-label {
+  font-size: 0.8125em !important;
+}
+
+.lang-select .arrow-down {
+  color: white !important;
+}
+
+.shippingCard {
+  height: 220px;
+  width: 220px;
+  border: 1px solid #d8d5d5;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.shippingCard:hover {
+  background-color: #ececec;
+}
+
+/* styles for '...' */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.block-with-text:before {
+  content: "...";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  transition: opacity 1s, background-color 1s;
+  opacity: 0.3;
+}
+
+.overlay:hover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #c03c12;
+  transition: opacity 0.7s, background-color 0.7s;
+  opacity: 0.9;
+}
+
+.disable-arrows input[type=number]::-webkit-inner-spin-button,
+.disable-arrows input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.disable-arrows input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-items :not(:last-child) {
+  margin-left: 10px;
+}
+
+.header-items * {
+  cursor: pointer;
+}
+
+.header-items a {
+  text-decoration: none;
+}
+
+.multi-field-row {
+  display: flex;
+}
+
+.multi-field-row :not(:last-child) {
+  margin-right: 15px;
+}
+
+.snackbarList div {
+  margin-top: 20px;
+}
+
+.title-expansion-panel {
+  font-family: "dinmedium";
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 50px;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "dinbold";
+  src: url("../../fonts/din-font/dinbold-webfont.woff2") format("woff2"), url("../../fonts/din-font/dinbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dinlight";
+  src: url("../../fonts/din-font/dinlight-webfont.woff2") format("woff2"), url("../../fonts/din-font/dinlight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dinmedium";
+  src: url("../../fonts/din-font/dinmedium-webfont.woff2") format("woff2"), url("../../fonts/din-font/dinmedium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dinregular";
+  src: url("../../fonts/din-font/dinregular-webfont.woff2") format("woff2"), url("../../fonts/din-font/dinregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.blue-header {
+  font-family: "dinmedium";
+  text-transform: uppercase;
+  color: #0076be;
+}
+
+.card-header {
+  font-family: "dinbold";
+  font-size: 1.25em;
+}
+
+.input-header {
+  text-transform: uppercase;
+  color: black;
+  font-size: 0.75em;
+  font-family: "dinmedium";
+}
+.input-header span {
+  color: #c03c12;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.label {
+  font-size: 0.75em;
+  align-items: flex-end;
+}
+
+.big-header {
+  font-size: 1.75em;
+  font-family: "dinmedium";
+  letter-spacing: 0.001em;
+  text-transform: uppercase;
+}
+
+.menu-label {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.8125em;
+  font-family: "dinmedium";
+}
+
+.small-header {
+  text-transform: uppercase;
+  color: #3b3b3b;
+  font-size: 0.8125em;
+  font-family: "dinmedium";
+}
+
+.title-header {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  font-family: "dinmedium";
+}
+
+.under-header {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-family: "dinlight";
+}
+
+.success {
+  color: #28ac7b;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.staticLogo {
+  display: none;
+}
+
+.HolyGrail {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  color: white;
+  background-color: #3b3b3b;
+}
+
+.layout-section {
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-position: center top;
+}
+
+.login-section {
+  height: 690px;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.account-section {
+  background-position-y: 65%;
+  height: 130px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.home-section {
+  background-position-y: 85%;
+  height: 130px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.reset-section {
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.md-collapse {
+  display: none !important;
+}
+
+.menu-collapse {
+  display: initial !important;
+}
+
+.top-menu-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shipping-form {
+  width: 43%;
+}
+
+.shipping-cards {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 550px !important;
+}
+
+.menu-item-row {
+  display: flex;
+  align-items: center !important;
+}
+
+@media screen and (max-width: 570px) {
+  .shipping-form {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 320px !important;
+  }
+
+  .shipping-cards {
+    width: 100%;
+  }
+
+  .bottomContent {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contentTitle {
+    width: 100%;
+  }
+
+  .footer-list-item {
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .footer-list {
+    justify-content: center;
+  }
+
+  .footer-image-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .footer-image-row > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  .copyright {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 570px) {
+  body {
+    margin: 0;
+  }
+
+  .topCard {
+    justify-content: center;
+    background-color: #f2f2f2 !important;
+    min-width: 200px;
+    max-width: 450px;
+    width: 450px;
+    margin: auto;
+  }
+
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .imageCard {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .footer-list-item {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .footer-list {
+    justify-content: flex-start !important;
+  }
+
+  .footer-image-row {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-image-row > div {
+    width: auto;
+  }
+
+  .copyright {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-title-header {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 750px) {
+  .main-title-header {
+    text-align: left;
+    width: 253px;
+  }
+
+  .bottomContent {
+    height: 100%;
+    margin-left: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .staticLogo {
+    display: block;
+  }
+
+  .md-collapse {
+    display: flex !important;
+  }
+
+  .menu-collapse {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  body {
+    margin: 0;
+  }
+
+  .bottomContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    height: 110px;
+    justify-content: space-between;
+  }
+
+  .loginCard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+  }
+
+  .textContainer {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 200px;
+  }
+
+  .HolyGrail-body {
+    flex-direction: row;
+    flex: 1;
+    min-height: 800px;
+  }
+
+  .main-content {
+    width: 1100px;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .footer-list {
+    justify-content: flex-start !important;
+  }
+
+  .copyright {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .main-content {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .layout-section {
+    background-size: 100% auto;
+  }
+}
+.homePageContent {
+  color: #575d6d;
+}
+
+.accountData {
+  color: #575d6d;
+}
+
+/*# sourceMappingURL=index.css.map */
