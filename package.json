@@ -1,6 +1,11 @@
 {
-  "name": "mbps-client",
+  "name": "react-starter-4fast-dev",
   "version": "0.1.0",
+  "author": { 
+    "name": "Anton Abyzov",
+    "email": "anton.abyzov@gmail.com"
+  },
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "i18next": "^12.0.0",
@@ -17,7 +22,8 @@
   },
   "scripts": {
     "start": "npm run sass | react-scripts start",
-    "start:staging": "cross-env REACT_APP_ENV=staging | react-scripts start", "//": "not working, is there a way to make it work with react-scripts?",
+    "start:staging": "cross-env REACT_APP_ENV=staging | react-scripts start",
+    "//": "not working, is there a way to make it work with react-scripts?",
     "build": "npm run sass:build | react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
